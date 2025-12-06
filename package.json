@@ -1,0 +1,16 @@
+{
+  "name": "product-page-wom",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Product page with Word of Mouth social proof elements",
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch",
+    "build": "node build.js",
+    "build:production": "node build.js"
+  },
+  "devDependencies": {
+    "fast-check": "^3.15.0",
+    "jsdom": "^23.0.1"
+  }
+}
