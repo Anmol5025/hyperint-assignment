@@ -135,6 +135,27 @@ async function copyHTMLFiles() {
   console.log('');
 }
 
+async function copyAssets() {
+  console.log('📁 Copying assets folder...\n');
+  
+  const assetsDir = join(__dirname, 'assets');
+  const outputDir = join(__dirname, 'dist', 'assets');
+  
+  // Check if assets directory exists
+  if (!existsSync(assetsDir)) {
+    console.log('⚠️  No assets folder found, skipping...\n');
+    return;
+  }
+  
+  await ensureDir(outputDir);
+  
+  // Copy all subdirectories in assets
+  const { cp } = await import('fs/promises');
+  await cp(assetsDir, outputDir, { recursive: true });
+  
+  console.log('✓ Copied assets folder\n');
+}
+
 async function generateReport(cssSaved, jsSaved) {
   const totalSaved = cssSaved + jsSaved;
   const totalKB = (totalSaved / 1024).toFixed(2);
@@ -165,6 +186,7 @@ async function build() {
     const cssSaved = await minifyCSSFiles();
     const jsSaved = await minifyJSFiles();
     await copyHTMLFiles();
+    await copyAssets();
     await generateReport(cssSaved, jsSaved);
   } catch (error) {
     console.error('❌ Build failed:', error.message);

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore three distinct design approaches for integrating Word of Mouth social proof elements into e-commerce product pages. Compare classic, modern, and magazine-style layouts.">
+    <meta name="keywords" content="product page, WOM, social proof, e-commerce, design variations, UI/UX">
+    <meta name="author" content="StyleCraft">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Product Page WOM Variations">
+    <meta property="og:description" content="Explore three distinct design approaches for integrating Word of Mouth social proof elements into e-commerce product pages.">
+    <meta property="og:url" content="">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Product Page WOM Variations">
+    <meta name="twitter:description" content="Explore three distinct design approaches for integrating Word of Mouth social proof elements into e-commerce product pages.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛍️</text></svg>">
+    
+    <title>Product Page WOM Variations - StyleCraft</title>
+    <link rel="stylesheet" href="css/common.min.css">
+    <style>
+        .landing-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--color-text-primary);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .variations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .variation-card {
+            background: var(--color-surface);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .variation-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .variation-preview {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+
+        .variation-content {
+            padding: 1.5rem;
+        }
+
+        .variation-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-text-primary);
+        }
+
+        .variation-content p {
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+        }
+
+        .variation-tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--color-accent);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-container">
+        <header class="hero">
+            <h1>Product Page WOM Variations</h1>
+            <p>Explore three distinct design approaches for integrating Word of Mouth social proof elements into e-commerce product pages</p>
+        </header>
+
+        <main>
+            <div class="variations-grid">
+                <a href="variation-1.html" class="variation-card">
+                    <div class="variation-preview">1</div>
+                    <div class="variation-content">
+                        <h2>Classic E-commerce Layout</h2>
+                        <p>Traditional left-image, right-details layout with sticky WOM sidebar and below-fold review section</p>
+                        <span class="variation-tag">Traditional</span>
+                    </div>
+                </a>
+
+                <a href="variation-2.html" class="variation-card">
+                    <div class="variation-preview">2</div>
+                    <div class="variation-content">
+                        <h2>Modern Split-Screen Layout</h2>
+                        <p>Full-height image gallery with scrollable product details and floating social proof cards</p>
+                        <span class="variation-tag">Modern</span>
+                    </div>
+                </a>
+
+                <a href="variation-3.html" class="variation-card">
+                    <div class="variation-preview">3</div>
+                    <div class="variation-content">
+                        <h2>Magazine-Style Layout</h2>
+                        <p>Hero product image with overlay details, horizontal scrolling media, and card-based reviews</p>
+                        <span class="variation-tag">Creative</span>
+                    </div>
+                </a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
