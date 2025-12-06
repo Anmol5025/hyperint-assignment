@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Product page with Word of Mouth social proof elements",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "test": "node --test",
     "test:watch": "node --test --watch",
